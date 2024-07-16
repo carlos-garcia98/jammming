@@ -1,0 +1,17 @@
+body {
+  background-color: #303030;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #000;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 > span {
+  color: #1dd05d;
+}
