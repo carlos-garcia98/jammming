@@ -1,0 +1,38 @@
+form {
+  grid-area: search-bar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  width: 25%;
+  height: 30%;
+  padding: 1.3rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.7rem;
+}
+
+button {
+  width: 8%;
+  height: 2.7rem;
+  background-color: transparent;
+  color: #1dd05d;
+  border: 1px solid #1dd05d;
+  border-radius: 0.7rem;
+}
+
+button:hover {
+  background-color: #1dd05d;
+  color: #fff;
+  box-shadow: 0 0.3rem 0 #424242;
+}
+
+button:active {
+  box-shadow: 0 0 0 0;
+}

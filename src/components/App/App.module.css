@@ -15,3 +15,13 @@ header {
 header > h1 > span {
   color: #1dd05d;
 }
+
+main {
+  height: 93.9vh;
+  display: grid;
+  grid-template-areas:
+    "search-bar search-bar"
+    "tracklist playlist";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15% 1fr;
+}
