@@ -1,0 +1,9 @@
+.resultsContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.resultsTitle {
+  font-weight: 400;
+}

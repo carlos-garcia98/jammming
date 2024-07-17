@@ -1,5 +1,6 @@
 import styles from "./App.module.css";
 import SearchBar from "../SearchBar/SearchBar";
+import SearchResults from "../SearchResults/SearchResults";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </header>
       <main>
         <SearchBar className={styles.searchBar} />
+        <SearchResults />
       </main>
     </>
   );

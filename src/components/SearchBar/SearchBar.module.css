@@ -18,7 +18,7 @@ input {
   border-radius: 0.7rem;
 }
 
-button {
+.searchButton {
   width: 8%;
   height: 2.7rem;
   background-color: transparent;
@@ -27,12 +27,12 @@ button {
   border-radius: 0.7rem;
 }
 
-button:hover {
+.searchButton:hover {
   background-color: #1dd05d;
   color: #fff;
   box-shadow: 0 0.3rem 0 #424242;
 }
 
-button:active {
+.searchButton:active {
   box-shadow: 0 0 0 0;
 }
