@@ -1,0 +1,19 @@
+.connectToSpotifyButton {
+  width: 9rem;
+  height: 2.7rem;
+  margin-left: auto;
+  background-color: transparent;
+  color: #1dd05d;
+  border: 1px solid #1dd05d;
+  border-radius: 0.7rem;
+}
+
+.connectToSpotifyButton:hover {
+  background-color: #1dd05d;
+  color: #fff;
+  box-shadow: 0 0.3rem 0 #424242;
+}
+
+.connectToSpotifyButton:active {
+  box-shadow: 0 0 0 0;
+}
