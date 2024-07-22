@@ -1,0 +1,21 @@
+.trackContainer {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.trackInformation {
+  color: #ffffffc9;
+}
+
+.trackAction {
+  position: absolute;
+  right: 0.5rem;
+  top: 1.4rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  z-index: 10;
+  cursor: pointer;
+}

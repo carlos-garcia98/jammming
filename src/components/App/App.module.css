@@ -4,15 +4,20 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header {
+.header {
   background-color: #000;
   height: 3.5rem;
+  padding: 1.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header > h1 > span {
+.headerTitle {
+  margin-left: auto;
+}
+
+.headerTitle > span {
   color: #1dd05d;
 }
 
@@ -21,7 +26,7 @@ main {
   display: grid;
   grid-template-areas:
     "search-bar search-bar"
-    "tracklist playlist";
+    "search-results playlist";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 15% 1fr;
 }

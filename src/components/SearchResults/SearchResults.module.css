@@ -1,0 +1,10 @@
+.resultsContainer {
+  grid-area: search-results;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.resultsTitle {
+  font-weight: 400;
+}
