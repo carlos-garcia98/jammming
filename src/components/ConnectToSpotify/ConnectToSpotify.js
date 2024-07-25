@@ -1,8 +1,12 @@
 import styles from "./ConnectToSpotify.module.css";
 
-function ConnectToSpotify() {
+function ConnectToSpotify(props) {
+  const handleClick = (e) => {
+    e.preventDefault();
+    props.connect();
+  };
   return (
-    <button className={styles.connectToSpotifyButton}>
+    <button className={styles.connectToSpotifyButton} onClick={handleClick}>
       Connect To Spotify
     </button>
   );
