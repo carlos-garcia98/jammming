@@ -5,15 +5,38 @@ import styles from "./App.module.css";
 import ConnectToSpotify from "../ConnectToSpotify/ConnectToSpotify";
 import SearchBar from "../SearchBar/SearchBar";
 import SearchResults from "../SearchResults/SearchResults";
+import Playlist from "../Playlist/Playlist";
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
+  const [playlistName, setPlaylistName] = useState("");
+  const [playlistTracks, setPlaylistTracks] = useState([]);
   const connectToSpotify = () => {
     Spotify.getAccessToken();
   };
 
   const search = useCallback((term) => {
     Spotify.search(term).then(setSearchResults);
+  }, []);
+
+  const addTrack = useCallback(
+    (track) => {
+      if (playlistTracks.find((savedTrack) => savedTrack.id === track.id)) {
+        return;
+      }
+      setPlaylistTracks((prev) => [...prev, track]);
+    },
+    [playlistTracks]
+  );
+
+  const removeTrack = useCallback((track) => {
+    setPlaylistTracks((prev) => {
+      return prev.filter((savedTrack) => savedTrack.id !== track.id);
+    });
+  }, []);
+
+  const updatePlaylistName = useCallback((name) => {
+    setPlaylistName(name);
   }, []);
 
   return (
@@ -26,7 +49,12 @@ function App() {
       </header>
       <main>
         <SearchBar search={search} />
-        <SearchResults searchResults={searchResults} />
+        <SearchResults searchResults={searchResults} onAdd={addTrack} />
+        <Playlist
+          playlistTracks={playlistTracks}
+          onRemove={removeTrack}
+          onNameChange={updatePlaylistName}
+        />
       </main>
     </>
   );

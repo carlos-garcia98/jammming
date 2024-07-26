@@ -22,6 +22,7 @@ function SearchBar({ search }) {
         placeholder="Type a song to search"
         value={term}
         onChange={handleChange}
+        className={styles.searchBarInput}
       />
       <button
         type="submit"

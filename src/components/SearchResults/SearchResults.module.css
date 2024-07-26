@@ -7,4 +7,6 @@
 
 .resultsTitle {
   font-weight: 400;
+  margin: 0 auto 1rem auto;
+  height: 2.62rem;
 }

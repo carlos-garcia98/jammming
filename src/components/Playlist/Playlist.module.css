@@ -1,0 +1,44 @@
+.playlistContainer {
+  grid-area: playlist;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.playlistName {
+  width: 50%;
+  height: 2.62rem;
+  margin: 0 auto 0.95rem auto;
+  padding: 1.3rem 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 0.7rem;
+}
+
+.playlistName:focus {
+  outline: none;
+}
+
+.saveToSpotifyButton {
+  width: 29rem;
+  height: 3.7rem;
+  margin: auto;
+  background-color: transparent;
+  color: #1dd05d;
+  border: 1px solid #1dd05d;
+  border-radius: 0.7rem;
+}
+
+.saveToSpotifyButton:hover {
+  background-color: #1dd05d;
+  color: #fff;
+  box-shadow: 0 0.3rem 0 #424242;
+}
+
+.saveToSpotifyButton:active {
+  box-shadow: 0 0 0 0;
+}
