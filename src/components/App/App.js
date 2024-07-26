@@ -26,7 +26,7 @@ function App() {
       </header>
       <main>
         <SearchBar search={search} />
-        <SearchResults />
+        <SearchResults searchResults={searchResults} />
       </main>
     </>
   );
