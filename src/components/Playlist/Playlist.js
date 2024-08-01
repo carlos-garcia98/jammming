@@ -2,13 +2,14 @@ import styles from "./Playlist.module.css";
 import Tracklist from "../Tracklist/Tracklist";
 import { useCallback } from "react";
 
-function Playlist({ playlistTracks, onRemove, onNameChange }) {
+function Playlist({ playlistTracks, onRemove, onNameChange, onSave }) {
   const handleChange = useCallback(
     ({ target }) => {
       onNameChange(target.value);
     },
     [onNameChange]
   );
+
   return (
     <div className={styles.playlistContainer}>
       <input
@@ -24,7 +25,9 @@ function Playlist({ playlistTracks, onRemove, onNameChange }) {
           onRemove={onRemove}
         />
       </div>
-      <button className={styles.saveToSpotifyButton}>Save to Spotify</button>
+      <button className={styles.saveToSpotifyButton} onClick={onSave}>
+        Save to Spotify
+      </button>
     </div>
   );
 }
